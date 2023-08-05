@@ -8,6 +8,17 @@
   src: url("../assets/fonts/Roboto-Bold.ttf");
 }
 
+:root {
+  --primary: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --default-font-sz: 16px;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
 *,
 html,
 body {
@@ -17,6 +28,11 @@ body {
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--default-font-sz);
   font-family: "roboto regular";
+}
+
+body {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
 }
