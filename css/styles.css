@@ -73,6 +73,10 @@ button {
 }
 
 /* sign up */
+#sign-up {
+  display: none;
+}
+
 .sign-up-card {
   display: flex;
   justify-content: space-between;
@@ -140,5 +144,31 @@ button {
 /* thank you */
 
 #thank-you {
-  display: none;
+  /* display: none; */
+}
+
+.thank-you-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 430px;
+  padding: 3rem;
+}
+
+.thank-you-card img {
+  width: 3.5rem;
+}
+
+.thank-you-card h2 {
+  font-size: 3rem;
+  font-family: "roboto bold";
+  line-height: 45px;
+}
+
+.thank-you-card p {
+  font-size: 0.9rem;
+}
+
+.thank-you-card #user-email {
+  font-family: "roboto bold";
 }
