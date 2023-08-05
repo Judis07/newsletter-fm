@@ -1,11 +1,13 @@
 @font-face {
   font-family: "roboto regular";
   src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "roboto bold";
   src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
 }
 
 :root {
@@ -15,8 +17,8 @@
   --grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
   --default-font-sz: 16px;
-  --font-weight-400: 400;
-  --font-weight-700: 700;
+  --weight-400: 400;
+  --weight-700: 700;
 }
 
 *,
@@ -33,7 +35,7 @@ html {
 }
 
 body {
-  background-color: var(--dark-slate-grey);
+  background-color: var(--charcoal-grey);
   height: 100vh;
 }
 
@@ -51,6 +53,17 @@ main {
   max-width: 1240px;
   width: 90%;
   margin: 0 auto;
+}
+
+button {
+  width: 100%;
+  font-family: "roboto bold";
+  padding: 1rem 0;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  cursor: pointer;
 }
 
 .card-container {
@@ -71,10 +84,37 @@ main {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
+.card-info h1 {
+  font-size: 3.5rem;
+  font-family: "roboto bold";
+  margin-bottom: 1rem;
+}
+
+.card-info form label {
+  font-family: "roboto bold";
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.card-info form input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  margin-top: 0.5rem;
+}
+
+.card-info form button {
+  margin: 1rem 0;
+}
 /* thank you */
 
 #thank-you {
