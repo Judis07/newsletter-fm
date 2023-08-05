@@ -34,5 +34,49 @@ html {
 
 body {
   background-color: var(--dark-slate-grey);
-  color: var(--white);
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-container {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+/* sign up */
+.sign-up-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* thank you */
+
+#thank-you {
+  display: none;
 }
