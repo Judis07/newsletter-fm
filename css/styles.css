@@ -73,9 +73,9 @@ button {
 }
 
 /* sign up */
-#sign-up {
+/* #sign-up {
   display: none;
-}
+} */
 
 .sign-up-card {
   display: flex;
@@ -144,7 +144,7 @@ button {
 /* thank you */
 
 #thank-you {
-  /* display: none; */
+  display: none;
 }
 
 .thank-you-card {
