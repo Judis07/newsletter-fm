@@ -51,7 +51,7 @@ main {
   flex-direction: column;
   height: 100%;
   max-width: 1440px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -171,4 +171,64 @@ button {
 
 .thank-you-card #user-email {
   font-family: "roboto bold";
+}
+
+/* media queries */
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+
+  .card-container {
+    padding: 1.5rem;
+  }
+
+  .card-info h1 {
+    font-size: 3.3rem;
+  }
+
+  .card-info {
+    flex-basis: 60%;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .card-info h1 {
+    font-size: 3.2rem;
+  }
+
+  .card-info {
+    flex-basis: 70%;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card-container {
+    padding: 1.2rem;
+  }
+  .card-info h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+  }
+
+  .card-container {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .sign-up-card {
+    flex-direction: column-reverse;
+  }
 }
