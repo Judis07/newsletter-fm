@@ -159,6 +159,14 @@ button {
   padding: 3rem;
 }
 
+.inner-thank-you-card {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .thank-you-card img {
   width: 3.5rem;
 }
@@ -252,5 +260,34 @@ button {
     padding: 0 2rem;
     justify-content: flex-start;
     gap: 1rem;
+  }
+
+  #thank-you {
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .inner-thank-you-card {
+    flex-basis: 80%;
+    gap: 3rem;
+  }
+
+  .thank-you-card img {
+    width: 4rem;
+  }
+
+  .thank-you-card h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 50px;
+  }
+
+  .thank-you-card p {
+    font-size: 1.2rem;
+  }
+
+  .thank-you-card button {
+    font-size: 1.2rem;
   }
 }
