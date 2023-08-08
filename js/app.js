@@ -6,8 +6,8 @@ const thankyouScreen = document.getElementById("thank-you");
 
 let email = document.getElementById("email");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
   if (email.value) {
     let userEmail = document.getElementById("user-email");
